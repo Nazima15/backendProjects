@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
+    <wb-module deploy-name="BGP400">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="BGP400"/>
+        <property name="java-output-path" value="/BGP400/build/classes"/>
+=======
+    <wb-module deploy-name="BGP300_">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="BGP300_"/>
+        <property name="java-output-path" value="/BGP300_/build/classes"/>
+>>>>>>> b07b90e1b1f0df188ab73ecd5508f3074ecb9914
+    </wb-module>
+</project-modules>
