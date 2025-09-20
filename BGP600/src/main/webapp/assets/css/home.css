@@ -1,0 +1,102 @@
+@charset "UTF-8"; /* 문자 인코딩 UTF-8 지정 */
+
+/* 공통 레이아웃 설정 */
+header, main, footer{
+   width:100%; /* 전체 너비 사용 */
+   margin:0 auto; /* 중앙 정렬 */
+}
+
+/* 헤더 스타일 */
+header {
+   display:flex; /* 플렉스 박스로 가로 정렬 */
+}
+
+/* 헤더 이미지 스타일 */
+header img {
+   height: 80px; /* 이미지 높이 80px */
+   width: auto; /* 가로 비율 자동 조정 */
+}
+
+/* 빛나는 텍스트 효과 */
+.shine-text {
+   color: white; /* 글자색 흰색 */
+   font-size: 40px; /* 글자 크기 */
+   text-align: center; /* 중앙 정렬 */
+   animation: glow 1.5s ease-in-out infinite alternate; /* 글자 빛나는 애니메이션 */
+}
+
+/* 글자 빛나는 애니메이션 정의 */
+@keyframes glow {
+   from {
+      text-shadow: 0 0 5px #3399ff, 0 0 10px #3399ff, 0 0 20px #3399ff; /* 초기 그림자 */
+   }
+   to {
+      text-shadow: 0 0 10px #66ccff, 0 0 20px #66ccff, 0 0 40px #66ccff; /* 최대 그림자 */
+   }
+}
+
+/* 내비게이션 메뉴 스타일 */
+nav ul {
+   list-style: none; /* 기본 리스트 점 제거 */
+   display: flex; /* 가로 정렬 */
+   margin: 0; /* 마진 제거 */
+   padding: 0; /* 패딩 제거 */
+}
+
+nav ul li {
+   margin:0 15px; /* 좌우 간격 */
+}
+
+nav ul li a {
+   text-decoration: none; /* 밑줄 제거 */
+   color: black; /* 글자색 검정 */
+   font-weight: bold; /* 글자 굵게 */
+   transition:color 0.3s ease, text-decoration 0.3s ease; /* 호버 시 부드러운 변화 */
+}
+
+/* 로그인 버튼 스타일 */
+.login-btn {
+   background-color: blue; /* 배경색 파랑 */
+   color: white; /* 글자색 흰색 */
+   border: none; /* 테두리 없음 */
+   padding: 10px 20px; /* 안쪽 여백 */
+   font-size: 16px; /* 글자 크기 */
+   border-radius: 5px; /* 모서리 둥글게 */
+   cursor: pointer; /* 마우스 커서 포인터로 변경 */
+}
+
+/* 로그인 버튼 호버 시 색상 변경 */
+.login-btn:hover {
+   background-color: darkblue; /* 진한 파랑으로 변경 */
+}
+
+/* 로그인 입력창 스타일 */
+.login-input {
+   border: 1px solid #ccc; /* 연한 회색 테두리 */
+   padding: 8px 12px; /* 안쪽 여백 */
+   border-radius: 8px; /* 둥근 모서리 */
+   outline: none; /* 클릭 시 외곽선 제거 */
+   font-size: 14px; /* 글자 크기 */
+}
+
+/* 입력창 포커스 시 스타일 */
+.login-input:focus {
+   border-color: #3399ff; /* 테두리 색상 변경 */
+   box-shadow: 0 0 5px rgba(51, 153, 255, 0.5); /* 파란색 그림자 */
+}
+
+/* 메인 영역 스타일 */
+main {
+   min-height:500px; /* 최소 높이 500px */
+   text-align: center; /* 중앙 정렬 */
+   padding: 20px; /* 안쪽 여백 */
+}
+
+/* 푸터 스타일 */
+footer {
+   background-color: #333; /* 어두운 배경 */
+   color: #fff; /* 글자 흰색 */
+   text-align: center; /* 중앙 정렬 */
+   padding: 10px 0; /* 상하 여백 */
+   font-size: 14px; /* 글자 크기 */
+}
